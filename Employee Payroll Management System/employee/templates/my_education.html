@@ -1,0 +1,100 @@
+{% extends 'emp_base.html' %}
+
+{% block main %}
+
+<div class="card shadow m-2">
+    <div class="card-body">
+        <a href="{% url 'edit_myeducation' %}" class="btn btn-primary float-right btn-sm">Edit Education Details</a>
+        <h5 class="p-2 text-danger" style="border-bottom : 2px solid orange ">My Education Details</h5>
+
+        <div class="container-fluid">
+
+        <table class="table table-bordered">
+          <tr>
+              <th>Post Graduate Programme</th>
+              <td>{{education.coursepg}}</td>
+          </tr>
+
+          <tr>
+              <th>Post Graduate School/College</th>
+              <td>{{education.schoolgpg}}</td>
+          </tr>
+
+          <tr>
+              <th>Year of Passing in Post Graduate</th>
+              <td>{{education.yearpassingpg}}</td>
+          </tr>
+
+            <tr>
+              <th>Post Graduate CGPA</th>
+              <td>{{education.percentagepg}}</td>
+          </tr>
+
+         <tr>
+              <th>Undergraduate Programme</th>
+              <td>{{education.coursepggra}}</td>
+          </tr>
+
+          <tr>
+              <th>Undergraduate School/College</th>
+              <td>{{education.schoolgra}}</td>
+          </tr>
+
+          <tr>
+              <th>Undergraduate Year</th>
+              <td>{{education.yearpassinggra}}</td>
+          </tr>
+
+             <tr>
+              <th>Undergraduate CGPA</th>
+              <td>{{education.percentagegra}}</td>
+          </tr>
+
+            <tr>
+              <th>SHS Course Name</th>
+              <td>{{education.coursessc}}</td>
+          </tr>
+
+          <tr>
+              <th>SHS School/College</th>
+              <td>{{education.schoolssc}}</td>
+          </tr>
+
+          <tr>
+              <th>WASSCE Year</th>
+              <td>{{education.yearpassingssc}}</td>
+          </tr>
+
+             <tr>
+              <th>WASSCE Grade</th>
+              <td>{{education.percentagessc}}</td>
+          </tr>
+
+            <tr>
+              <th>JHS Course Name</th>
+              <td>{{education.coursehsc}}</td>
+          </tr>
+
+            <tr>
+              <th>JHS School/College</th>
+              <td>{{education.schoolhsc}}</td>
+          </tr>
+
+          <tr>
+              <th>BECE Year</th>
+              <td>{{education.yearpassinghsc}}</td>
+          </tr>
+
+             <tr>
+              <th>BECE Grade</th>
+              <td>{{education.percentagehsc}}</td>
+          </tr>
+
+        </table>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
